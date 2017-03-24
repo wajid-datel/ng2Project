@@ -1,0 +1,28 @@
+<md-toolbar color="primary">
+
+  <a md-button [routerLink]="['']">
+    <md-icon>home</md-icon>
+    ngEvents</a>
+
+  <form id="searchForm" class="mat-right">
+    <input mdInput placeholder="Search..." value="">
+    <a md-button >Search</a>
+  </form>
+
+  <div fxLayout="row" fxShow="false" fxShow.gt-sm>
+    <a md-button [routerLink]="['/events']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">All Events</a>
+    <a md-button [routerLink]="['/events/new']" routerLinkActive="active">Create Event</a>
+
+  </div>
+  <span class="fill-remaining-space"></span>
+
+  <button md-button [md-menu-trigger-for]="menu" fxHide="false" fxHide.gt-sm>
+    <md-icon>menu</md-icon>
+  </button>
+
+</md-toolbar>
+<md-menu x-position="before" #menu="mdMenu">
+  <a md-button [routerLink]="['/events']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">All Events</a>
+  <a md-button [routerLink]="['/events/new']" routerLinkActive="active">Create Event</a>
+  <!--<button md-menu-item>Help</button>-->
+</md-menu>
