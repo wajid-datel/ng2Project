@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { IEvent } from '../../../models/event.model';
 
 @Component({
   selector: 'event-thumbnail',
@@ -6,16 +7,16 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./event-thumbnail.component.css']
 })
 export class EventThumbnailComponent implements OnInit {
-  @Input() event:any;
+  @Input() event:IEvent;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  getStartTimeStyle(): any {
+  getStartTimeStyle():any {
     if (this.event && this.event.time === '8:00 am')
-      return {color: '#003300', 'font-weight': 'bold'}
+      return {color: '#003300', 'font-weight': 'bold'};
     return {}
   }
 

@@ -6,3 +6,28 @@
 @import "app/components/event-list/event-list.component.css";
 @import "app/components/event-thumbnail/event-thumbnail.component.css";
 @import "app/components/404/404.component.css";
+@import "app/components/create-session/create-session.component.css";
+@import "app/components/create-event/create-event.component.css";
+@import "app/components/event-details/event-details.component.css";
+
+
+.hoverwell:hover {
+  background-color: #485563;
+  cursor: pointer;
+}
+
+.container {
+  padding-top: 10px;
+}
+
+.pointable {
+  cursor: pointer;
+}
+
+button {
+  color: #555;
+}
+
+[hidden] {
+  display: none !important;
+}

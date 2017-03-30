@@ -15,6 +15,11 @@
 
   </div>
   <span class="fill-remaining-space"></span>
+  <div>
+    <a md-button *ngIf="!auth.isAuthenticated()" [routerLink]="['user/login']">Login</a>
+    <a md-button *ngIf="auth.isAuthenticated()" [routerLink]="['user/profile']">Welcome {{auth.currentUser.firstName}}</a>
+  </div>
+
 
   <button md-button [md-menu-trigger-for]="menu" fxHide="false" fxHide.gt-sm>
     <md-icon>menu</md-icon>
