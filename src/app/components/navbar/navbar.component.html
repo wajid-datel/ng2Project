@@ -4,9 +4,13 @@
     <md-icon>home</md-icon>
     ngEvents</a>
 
-  <form id="searchForm" class="mat-right">
-    <input mdInput placeholder="Search..." value="">
-    <a md-button >Search</a>
+  <form id="searchForm" (ngSubmit)="searchSessions(searchTerm)" class="navbar-form navbar-right"  >
+    <div class="form-group">
+      <input mdInput [(ngModel)]="searchTerm" name="searchTerm" type="text" placeholder="Search Sessions" >
+    </div>
+    <button md-button class="btn btn-default" modal-trigger="searchResults">
+      Search
+    </button>
   </form>
 
   <div fxLayout="row" fxShow="false" fxShow.gt-sm>
@@ -31,3 +35,9 @@
   <a md-button [routerLink]="['/events/new']" routerLinkActive="active">Create Event</a>
   <!--<button md-menu-item>Help</button>-->
 </md-menu>
+
+<simple-modal closeOnBodyClick="true" elementId="searchResults" title="Matching Sessions">
+  <div class="list-group">
+    <a class="list-group-item" *ngFor="let session of foundSessions" [routerLink]="['/events', session.eventId]">{{session.name}}</a>
+  </div>
+</simple-modal>

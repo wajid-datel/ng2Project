@@ -1,6 +1,6 @@
 webpackJsonp([3,5],{
 
-/***/ 1026:
+/***/ 1048:
 /***/ (function(module, exports) {
 
 /*
@@ -253,15 +253,15 @@ function updateLink(linkElement, obj) {
 
 /***/ }),
 
-/***/ 1030:
+/***/ 1052:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(508);
+module.exports = __webpack_require__(510);
 
 
 /***/ }),
 
-/***/ 14:
+/***/ 11:
 /***/ (function(module, exports) {
 
 /*
@@ -318,16 +318,16 @@ module.exports = function() {
 
 /***/ }),
 
-/***/ 508:
+/***/ 510:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(754);
+var content = __webpack_require__(770);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(1026)(content, {});
+var update = __webpack_require__(1048)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -345,10 +345,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 745:
+/***/ 758:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)();
+exports = module.exports = __webpack_require__(11)();
 // imports
 
 
@@ -360,10 +360,10 @@ exports.push([module.i, ".mat-elevation-z0{box-shadow:0 0 0 0 rgba(0,0,0,.2),0 0
 
 /***/ }),
 
-/***/ 746:
+/***/ 759:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)();
+exports = module.exports = __webpack_require__(11)();
 // imports
 
 
@@ -375,10 +375,10 @@ exports.push([module.i, ".errorMessage {\r\n  margin-top:150px;\r\n  font-size: 
 
 /***/ }),
 
-/***/ 747:
+/***/ 760:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)();
+exports = module.exports = __webpack_require__(11)();
 // imports
 
 
@@ -390,10 +390,40 @@ exports.push([module.i, "", ""]);
 
 /***/ }),
 
-/***/ 748:
+/***/ 761:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)();
+exports = module.exports = __webpack_require__(11)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 762:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(11)();
+// imports
+
+
+// module
+exports.push([module.i, ".modal-body { height: 250px; overflow-y: scroll; }\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 763:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(11)();
 // imports
 
 
@@ -405,10 +435,10 @@ exports.push([module.i, "em {float:right; color:#E05C65; padding-left:10px;}\r\n
 
 /***/ }),
 
-/***/ 749:
+/***/ 764:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)();
+exports = module.exports = __webpack_require__(11)();
 // imports
 
 
@@ -420,25 +450,25 @@ exports.push([module.i, "em {float:right; color:#E05C65; padding-left:10px;}\r\n
 
 /***/ }),
 
-/***/ 750:
+/***/ 765:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)();
+exports = module.exports = __webpack_require__(11)();
 // imports
 
 
 // module
-exports.push([module.i, ".container { padding-left:20px; padding-right:20px; }\r\n.event-image { height: 100px; }\r\n", ""]);
+exports.push([module.i, ".container { padding-left:20px; padding-right:20px; }\r\n.event-image { height:100px; }\r\na {cursor:pointer}\r\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 751:
+/***/ 766:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)();
+exports = module.exports = __webpack_require__(11)();
 // imports
 
 
@@ -450,25 +480,25 @@ exports.push([module.i, "", ""]);
 
 /***/ }),
 
-/***/ 752:
+/***/ 767:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)();
+exports = module.exports = __webpack_require__(11)();
 // imports
 
 
 // module
-exports.push([module.i, ".thumbnail { min-height: 210px; }\r\n.pad-left { margin-left: 10px; }\r\n.well div { color: #bbb; }\r\n", ""]);
+exports.push([module.i, ".pad-left { margin-left: 10px; }\r\n.thumbnail { min-height: 210px; }\r\n.well div { color: #bbb; }\r\n.thumbnail { min-height: 210px; }\r\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 753:
+/***/ 768:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)();
+exports = module.exports = __webpack_require__(11)();
 // imports
 
 
@@ -480,28 +510,46 @@ exports.push([module.i, ".fill-remaining-space {\r\n  /*This fills the remaining
 
 /***/ }),
 
-/***/ 754:
+/***/ 769:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)();
+exports = module.exports = __webpack_require__(11)();
 // imports
-exports.i(__webpack_require__(745), "");
-exports.i(__webpack_require__(747), "");
-exports.i(__webpack_require__(753), "");
-exports.i(__webpack_require__(751), "");
-exports.i(__webpack_require__(752), "");
-exports.i(__webpack_require__(746), "");
-exports.i(__webpack_require__(749), "");
-exports.i(__webpack_require__(748), "");
-exports.i(__webpack_require__(750), "");
+
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n\n\n.hoverwell:hover {\n  background-color: #485563;\n  cursor: pointer;\n}\n\n.container {\n  padding-top: 10px;\n}\n\n.pointable {\n  cursor: pointer;\n}\n\nbutton {\n  color: #555;\n}\n\n[hidden] {\n  display: none !important;\n}\n", ""]);
+exports.push([module.i, ".votingWidgetContainer {\r\n  padding-left:24px;\r\n}\r\n\r\n.votingWidget {\r\n  height: 64px;\r\n  padding-top: 7px;\r\n  border-radius: 21px;\r\n}\r\n\r\n.votingButton {\r\n  margin-left: -7px;\r\n  margin-top: 1px;\r\n  cursor:pointer;\r\n}\r\n\r\n.votingButton i {\r\n  color: white;\r\n}\r\n\r\n.badge-inverse {\r\n  background-color: #fff;\r\n  color: #4e5d6c;\r\n}\r\n\r\n.votingCount {\r\n  margin-left: -11px;\r\n  margin-top: 1px;\r\n  font-weight: bold;\r\n  font-size: 14px;\r\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 770:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(11)();
+// imports
+exports.i(__webpack_require__(758), "");
+exports.i(__webpack_require__(760), "");
+exports.i(__webpack_require__(768), "");
+exports.i(__webpack_require__(766), "");
+exports.i(__webpack_require__(767), "");
+exports.i(__webpack_require__(759), "");
+exports.i(__webpack_require__(764), "");
+exports.i(__webpack_require__(763), "");
+exports.i(__webpack_require__(765), "");
+exports.i(__webpack_require__(761), "");
+exports.i(__webpack_require__(762), "");
+exports.i(__webpack_require__(769), "");
+
+// module
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n\n.hoverwell:hover {\n  background-color: #485563;\n  cursor: pointer;\n}\n\n.container {\n  padding-top: 10px;\n}\n\n.pointable {\n  cursor: pointer;\n}\n\nbutton {\n  color: #555;\n}\n\n[hidden] {\n  display: none !important;\n}\n", ""]);
 
 // exports
 
 
 /***/ })
 
-},[1030]);
+},[1052]);
 //# sourceMappingURL=styles.bundle.js.map

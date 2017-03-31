@@ -9,7 +9,9 @@
 @import "app/components/create-session/create-session.component.css";
 @import "app/components/create-event/create-event.component.css";
 @import "app/components/event-details/event-details.component.css";
-
+@import "app/components/common/collapsible-well/collapsible-well.component.css";
+@import "app/components/common/simple-modal/simple-modal.component.css";
+@import "app/components/upvote/upvote.component.css";
 
 .hoverwell:hover {
   background-color: #485563;

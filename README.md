@@ -1,6 +1,10 @@
+
 # Ng2Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.2.
+
+# Project website
+http://ng2ap.azurewebsites.net/
 
 ## Development server
 

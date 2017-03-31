@@ -4,14 +4,20 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, ActivatedRouteSnapshot } from '@angular/router';
 import { MaterialModule } from '@angular/material';
-import { AppComponent, NavBarComponent, EventListComponent, EventThumbnailComponent, Error404Component, CreateEventComponent, EventDetailsComponent, CreateSessionComponent } from './components/index';
+import { AppComponent, NavBarComponent, EventListComponent, EventThumbnailComponent, Error404Component, CreateEventComponent, EventDetailsComponent,
+  CreateSessionComponent, SessionListComponent, CollapsibleWellComponent, UpvoteComponent, SimpleModalComponent  } from './components/index';
 import { FlexLayoutModule } from "@angular/flex-layout";
-import { EventService, EventListResolverService, EventRouteActivatorService } from "./services/index";
+import { EventService, EventListResolverService, EventRouteActivatorService, VoterService } from "./services/index";
 import { appRoutes } from './routes';
 import { AuthService } from './userModule/auth.service';
+import { DurationPipe } from './shared/index';
+import { Toastr, JQ_TOKEN, TOASTR_TOKEN } from './common/index';
 
 import 'hammerjs';
-import { SessionListComponent } from './components/session-list/session-list.component';
+import { ModalTriggerDirective, LocationValidator } from './directives/index';
+
+//declare let toastr : Toastr;
+//declare let jQuery : Object;
 
 @NgModule({
   declarations: [
@@ -23,7 +29,13 @@ import { SessionListComponent } from './components/session-list/session-list.com
     CreateEventComponent,
     EventDetailsComponent,
     CreateSessionComponent,
-    SessionListComponent
+    SessionListComponent,
+    CollapsibleWellComponent,
+    DurationPipe,
+    ModalTriggerDirective,
+    SimpleModalComponent,
+    UpvoteComponent,
+    LocationValidator
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
@@ -37,6 +49,9 @@ import { SessionListComponent } from './components/session-list/session-list.com
   providers: [
     EventService,
     EventRouteActivatorService,
+    VoterService,
+   // { provide: TOASTR_TOKEN, useValue: toastr },
+   // { provide: JQ_TOKEN, useValue: jQuery },
     EventListResolverService,
     AuthService,
     {
